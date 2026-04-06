@@ -67,4 +67,5 @@ export const EMPIRE_SITES = [
   { name: 'Asuntomaatti', url: 'https://asuntomaatti.fi', description: 'Etsi asuntoja' },
   { name: 'Alennuskartta', url: 'https://alennuskartta.fi', description: 'Löydä tarjoukset' },
   { name: 'Lakimaatti', url: 'https://lakimaatti.fi', description: 'Lakipalvelut' },
+  { name: 'Valitse', url: 'https://valitse.fi', description: 'Kaikki vertailupalvelut yhdessä paikassa' },
 ];

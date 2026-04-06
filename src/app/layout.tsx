@@ -4,6 +4,7 @@ import './globals.css';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import CookieConsent from '@/components/layout/CookieConsent';
+import { GoogleAnalytics } from '@/components/GoogleAnalytics';
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL, SITE_TAGLINE } from '@/lib/constants';
 
 const inter = Inter({
@@ -103,6 +104,7 @@ export default function RootLayout({
         >
           Siirry sisältöön
         </a>
+        <GoogleAnalytics />
         <Header />
         <main id="main-content" className="flex-1">{children}</main>
         <Footer />

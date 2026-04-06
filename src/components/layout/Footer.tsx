@@ -79,7 +79,7 @@ export default function Footer() {
         {/* Empire cross-links */}
         <div className="mt-12 border-t border-slate-800 pt-8">
           <p className="mb-4 text-xs font-medium uppercase tracking-wider text-slate-500">
-            Muut vertailupalvelumme
+            Osa Valitse-verkostoa
           </p>
           <div className="flex flex-wrap gap-4">
             {EMPIRE_SITES.map((site) => (
