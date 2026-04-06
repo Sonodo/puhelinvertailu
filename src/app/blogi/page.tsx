@@ -5,7 +5,7 @@ import { blogPosts } from '@/data/blog-posts';
 export const metadata: Metadata = {
   title: 'Blogi — Ajankohtaista puhelinliittymistä ja operaattoreista',
   description:
-    'Puhelinvertailun blogi: vertailuja, oppaita ja ajankohtaisia artikkeleita puhelinliittymistä, operaattoreista ja laajakaistoista.',
+    'Valitse Puhelimen blogi: vertailuja, oppaita ja ajankohtaisia artikkeleita puhelinliittymistä, operaattoreista ja laajakaistoista.',
   alternates: { canonical: '/blogi' },
 };
 

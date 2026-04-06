@@ -1,7 +1,7 @@
 import { ImageResponse } from 'next/og';
 
 export const runtime = 'edge';
-export const alt = 'Puhelinvertailu.fi — Vertaa ja säästä liittymäkuluissa';
+export const alt = 'Valitse Puhelin — Vertaa ja valitse paras liittymä';
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
@@ -35,7 +35,7 @@ export default function Image() {
             <circle cx="16" cy="25" r="1.5" fill="white" />
           </svg>
           <div style={{ fontSize: 48, fontWeight: 800, color: 'white' }}>
-            Puhelinvertailu.fi
+            Valitse Puhelin
           </div>
         </div>
         <div style={{ fontSize: 28, color: '#94A3B8', maxWidth: 700, textAlign: 'center' }}>

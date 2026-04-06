@@ -18,11 +18,11 @@ import { MobilePlanCard } from '@/components/ui/PlanCard';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
-  title: 'Puhelinvertailu — Vertaa puhelinliittymiä ja laajakaistoja Suomessa',
+  title: 'Valitse Puhelin — Vertaa puhelinliittymiä ja laajakaistoja Suomessa',
   description:
     'Vertaa puhelinliittymiä ja laajakaistoja Suomessa. Löydä halvin liittymä Elisan, DNA:n, Telian ja budjettioperaattoreiden valikoimista. Ilmainen ja puolueeton vertailu.',
   openGraph: {
-    title: 'Puhelinvertailu — Vertaa puhelinliittymiä ja löydä halvin liittymä',
+    title: 'Valitse Puhelin — Vertaa puhelinliittymiä ja löydä halvin liittymä',
     description:
       'Vertaa puhelinliittymiä ja laajakaistoja. Löydä halvin liittymä. Ilmainen ja puolueeton.',
     url: '/',

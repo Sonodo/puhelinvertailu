@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import ComparisonTool from '@/components/comparison/ComparisonTool';
 
 export const metadata: Metadata = {
-  title: 'Vertaa liittymiä rinnakkain — Puhelinvertailu',
+  title: 'Vertaa liittymiä rinnakkain',
   description:
     'Vertaa puhelinliittymiä rinnakkain. Valitse 2–3 liittymää ja näe erot hinnassa, datassa, nopeudessa ja ominaisuuksissa.',
   alternates: { canonical: '/vertaa' },

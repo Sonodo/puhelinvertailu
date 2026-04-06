@@ -1,11 +1,11 @@
 import { NavigationItem } from '@/types';
 
 // Site metadata
-export const SITE_NAME = 'Puhelinvertailu';
-export const SITE_URL = 'https://puhelinvertailu.fi';
+export const SITE_NAME = 'Valitse Puhelin';
+export const SITE_URL = 'https://valitsepuhelin.fi';
 export const SITE_DESCRIPTION =
-  'Vertaa puhelinliittymiä ja laajakaistoja Suomessa. Löydä halvin liittymä Elisan, DNA:n, Telian ja budjettioperaattoreiden valikoimista. Ilmainen ja puolueeton vertailu.';
-export const SITE_TAGLINE = 'Vertaa ja säästä liittymäkuluissa';
+  'Vertaa puhelinliittymiä helposti. Valitse Puhelin näyttää kaikki operaattorit ja liittymät puolueettomasti.';
+export const SITE_TAGLINE = 'Vertaa ja valitse paras liittymä';
 
 // Colors — teal/blue telecom theme
 export const COLORS = {
@@ -61,9 +61,9 @@ export const NAVIGATION: NavigationItem[] = [
 
 // Empire cross-links
 export const EMPIRE_SITES = [
-  { name: 'Energiavertailu', url: 'https://energiavertailu.fi', description: 'Vertaa sähkösopimuksia' },
-  { name: 'Vakuutusvertailu', url: 'https://vakuutusvertailu.fi', description: 'Vertaa vakuutuksia' },
-  { name: 'Lainavertailu', url: 'https://lainavertailu.fi', description: 'Vertaa lainoja' },
+  { name: 'Valitse Sähkö', url: 'https://valitsesahko.fi', description: 'Vertaa sähkösopimuksia' },
+  { name: 'Valitse Vakuutus', url: 'https://valitsevakuutus.fi', description: 'Vertaa vakuutuksia' },
+  { name: 'Valitse Laina', url: 'https://valitselaina.fi', description: 'Vertaa lainoja' },
   { name: 'Asuntomaatti', url: 'https://asuntomaatti.fi', description: 'Etsi asuntoja' },
   { name: 'Alennuskartta', url: 'https://alennuskartta.fi', description: 'Löydä tarjoukset' },
   { name: 'Lakimaatti', url: 'https://lakimaatti.fi', description: 'Lakipalvelut' },

@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tietoa palvelusta — Puhelinvertailu.fi',
+  title: 'Tietoa palvelusta',
   description:
-    'Puhelinvertailu.fi on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
+    'Valitse Puhelin on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
   alternates: { canonical: '/tietoa' },
 };
 
@@ -12,13 +12,13 @@ export default function TietoaPage() {
     <div className="py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
-          Tietoa Puhelinvertailu.fi-palvelusta
+          Tietoa Valitse Puhelin -palvelusta
         </h1>
 
         <article className="mt-10 prose prose-slate prose-lg max-w-none">
-          <h2>Mikä on Puhelinvertailu.fi?</h2>
+          <h2>Mikä on Valitse Puhelin?</h2>
           <p>
-            Puhelinvertailu.fi on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
+            Valitse Puhelin on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
             kuluttajia löytämään parhaan puhelinliittymän ja laajakaistan. Vertailemme kaikkia
             Suomen suurimpia operaattoreita ja niiden liittymiä yhdessä paikassa.
           </p>
@@ -44,10 +44,10 @@ export default function TietoaPage() {
             kriteereillä, ja käyttäjä voi itse suodattaa ja lajitella tuloksia.
           </p>
 
-          <h2>Osa Vertaile-palveluperhettä</h2>
+          <h2>Osa Valitse-verkostoa</h2>
           <p>
-            Puhelinvertailu.fi on osa laajempaa suomalaista vertailupalveluperhettä, johon kuuluvat
-            myös Energiavertailu.fi (sähkösopimukset), Vakuutusvertailu.fi, Lainavertailu.fi ja
+            Valitse Puhelin on osa Valitse-verkostoa, johon kuuluvat
+            myös Valitse Sähkö (sähkösopimukset), Valitse Vakuutus, Valitse Laina ja
             muut palvelut. Tavoitteemme on auttaa suomalaisia kuluttajia tekemään parempia
             päätöksiä ja säästämään arjen kuluissa.
           </p>
@@ -56,7 +56,7 @@ export default function TietoaPage() {
           <p>
             Sonodo — Henri Linnainmaa<br />
             Helsinki, Suomi<br />
-            Sähköposti: info@puhelinvertailu.fi
+            Sähköposti: info@valitse.fi
           </p>
         </article>
       </div>
