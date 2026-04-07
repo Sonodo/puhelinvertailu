@@ -70,7 +70,7 @@ export default function Paras5GPage() {
             <h3>5G-liittymän valintakriteerit</h3>
             <ul>
               <li><strong>Nopeus:</strong> 200M riittää useimmille, 600M–1000M vaativaan käyttöön</li>
-              <li><strong>Hinta:</strong> Budjettioperaattoreilta 5G alkaen ~23 €/kk</li>
+              <li><strong>Hinta:</strong> 5G alkaen ~27 €/kk (Oomi, DNA)</li>
               <li><strong>Kattavuus:</strong> Tarkista, toimiiko 5G alueellasi</li>
               <li><strong>Puhelin:</strong> Tarvitset 5G-yhteensopivan puhelimen</li>
             </ul>

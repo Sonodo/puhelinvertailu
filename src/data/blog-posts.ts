@@ -6,20 +6,20 @@ export const blogPosts: BlogPost[] = [
     title: 'Halvimmat puhelinliittymät 2026 — kattava hintavertailu',
     description: 'Selvitimme, mitkä ovat Suomen halvimmat puhelinliittymät vuonna 2026. Vertailussa mukana Elisa, DNA, Telia sekä budjettioperaattorit Moi, Giga ja Oomi.',
     date: '2026-03-15',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Vertailu',
     readingTime: 8,
     content: `
 <p>Puhelinliittymän hinta on monelle suomalaiselle tärkeä valintakriteeri. Vuonna 2026 kilpailu on kiristynyt entisestään budjettioperaattoreiden eli MVNO-toimijoiden myötä. Tässä artikkelissa käymme läpi halvimmat puhelinliittymät eri kategorioissa.</p>
 
-<h2>Halvimmat perusliittymät (alle 10 €/kk)</h2>
-<p>Jos tarvitset liittymän lähinnä peruskäyttöön — puheluihin, viesteihin ja kevyeen netin selailuun — alle 10 euron kuukausihinnalla saa jo hyvän liittymän. Giga Mobiili tarjoaa 5 Gt dataa hintaan 6,99 €/kk, ja Moi Mobiili vastaavasti 5 Gt hintaan 7,99 €/kk. Nämä ovat markkinoiden edullisimmat vaihtoehdot, ja molemmissa on rajaton puhe ja viestit Suomeen.</p>
+<h2>Halvimmat perusliittymät (alle 15 €/kk)</h2>
+<p>Jos tarvitset liittymän lähinnä peruskäyttöön — puheluihin, viesteihin ja kevyeen netin selailuun — Globetelin Perus-liittymä (6,99 €/kk) on markkinoiden edullisin, mutta siinä puhelut ja data maksavat erikseen. DNA:n Super 4G 8 Gt (12,90 €/kk) on suosittu valinta, jossa on rajaton puhe ja viestit Suomeen.</p>
 
-<h2>Parhaat keskihintaluokan liittymät (10–20 €/kk)</h2>
-<p>Keskihintaluokassa 10–20 euron kuukausihinnalla saat jo reilusti dataa. DNA:n Super 4G 8 Gt (12,90 €/kk) on suosittu valinta, ja Giga Mobiili tarjoaa 20 Gt dataa hintaan 13,99 €/kk. Moi Mobiili erottuu rajattomalla 4G-datalla hintaan 19,99 €/kk.</p>
+<h2>Parhaat keskihintaluokan liittymät (15–25 €/kk)</h2>
+<p>Keskihintaluokassa saat jo rajatonta dataa. Moi Mobiilin Rento 4G 150M (15,00 €/kk) tarjoaa 8 Gt dataa kohtuulliseen hintaan. Moi Suosikki 4G 300M (22,00 €/kk) antaa rajattoman datan 4G-nopeudella. Elisan ja Telian 10 Gt -liittymät asettuvat 14,90–15,90 €/kk hintaluokkaan.</p>
 
 <h2>Rajattomat liittymät — halvin rajaton data</h2>
-<p>Rajattoman datan liittymän saa edullisimmillaan Moi Mobiilista (19,99 €/kk, 4G 100M). 5G-liittymistä halvin rajaton löytyy Giga Mobiilista (22,99 €/kk, 5G 300M). Isoista operaattoreista DNA:n Rajaton 5G 200M (27,90 €/kk) on edullisin.</p>
+<p>Rajattoman datan liittymän saa edullisimmillaan Moi Mobiilista (22,00 €/kk, 4G 300M). Oomi Mobiili tarjoaa rajattoman 4G-datan hintaan 21,99 €/kk. 5G-liittymistä edullisimmissa hintaluokissa ovat DNA:n Rajaton 5G 200M (27,90 €/kk) ja Moi Reilu 5G 450M (28,00 €/kk).</p>
 
 <h2>Vinkit halvimman liittymän löytämiseen</h2>
 <ul>
@@ -31,7 +31,7 @@ export const blogPosts: BlogPost[] = [
 </ul>
 
 <h2>Yhteenveto</h2>
-<p>Vuonna 2026 halvimman liittymän löytää budjettioperaattoreilta. Giga Mobiili, Moi Mobiili ja Oomi Mobiili tarjoavat merkittävästi edullisempia hintoja kuin Elisa, DNA ja Telia — ilman että verkkolaatu kärsii, sillä ne käyttävät isojen operaattoreiden verkkoja.</p>
+<p>Vuonna 2026 halvimman liittymän löytää budjettioperaattoreilta. Moi Mobiili, Globetel ja Oomi Mobiili tarjoavat edullisia vaihtoehtoja — ilman että verkkolaatu kärsii, sillä ne käyttävät isojen operaattoreiden verkkoja. Myös Giga Mobiili (Gigantin operaattori) tarjoaa selkeitä liittymiä, joskin niiden hintataso on lähellä isojen operaattoreiden kampanjahintoja.</p>
 `,
   },
   {
@@ -39,11 +39,11 @@ export const blogPosts: BlogPost[] = [
     title: 'Elisa vs DNA vs Telia — suuri operaattorivertailu 2026',
     description: 'Vertailemme Suomen kolmea suurinta operaattoria: Elisa, DNA ja Telia. Kumpi on paras verkko, liittymät ja asiakaspalvelu?',
     date: '2026-03-10',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Vertailu',
     readingTime: 10,
     content: `
-<p>Suomen matkapuhelinmarkkinoita hallitsee kolme suurta operaattoria: Elisa (38 % markkinaosuus), Telia (29 %) ja DNA (28 %). Kaikki kolme tarjoavat kattavan valikoiman liittymiä, mutta eroja löytyy hinnoissa, verkossa ja lisäpalveluissa.</p>
+<p>Suomen matkapuhelinmarkkinoita hallitsee kolme suurta operaattoria: Elisa (37 % markkinaosuus), Telia (30 %) ja DNA (27 %). Kaikki kolme tarjoavat kattavan valikoiman liittymiä, mutta eroja löytyy hinnoissa, verkossa ja lisäpalveluissa.</p>
 
 <h2>Verkko ja kattavuus</h2>
 <p>Kaikilla kolmella operaattorilla on oma 4G- ja 5G-verkko. Elisan 5G-verkko on laajin ja kattaa jo yli 300 paikkakuntaa. Telian ja DNA:n 5G-verkot ovat hieman pienemmät, mutta kasvavat jatkuvasti. 4G-verkkojen kattavuudessa erot ovat pieniä — kaikki kolme kattavat käytännössä koko asutun Suomen.</p>
@@ -52,7 +52,7 @@ export const blogPosts: BlogPost[] = [
 <p>Hinnoissa DNA on perinteisesti ollut hieman edullisempi kuin Elisa ja Telia. Esimerkiksi rajaton 5G-liittymä maksaa DNA:lla 27,90 €/kk (200M), kun Elisalla ja Telialla vastaava maksaa 29,90 €/kk (300M). Premiumliittymissä (1000M) Elisalla ja Telialla hinta on 44,90 €/kk, DNA:lla 42,90 €/kk.</p>
 
 <h2>Lisäpalvelut ja viihde</h2>
-<p>Elisa tarjoaa Elisa Viihde Viaplay -palvelun, joka sisältyy kalliimpiin liittymiin. DNA:lla on DNA TV ja Telia vastaavasti Telia TV. Kaikki kolme sisällyttävät viihdepalvelunsa kalliimpiin liittymäpaketteihin.</p>
+<p>Elisa tarjoaa Elisa Viihde -palvelun, joka sisältyy kalliimpiin liittymiin. DNA:lla on DNA TV ja Telia tarjoaa vastaavasti Telia TV:tä. Kaikki kolme sisällyttävät viihdepalvelunsa kalliimpiin liittymäpaketteihin.</p>
 
 <h2>Asiakaspalvelu</h2>
 <p>Traficomin asiakastyytyväisyystutkimusten perusteella Elisa ja Telia saavat hieman paremmat arvosanat asiakaspalvelusta kuin DNA. Erot ovat kuitenkin pieniä, ja kokemukset vaihtelevat.</p>
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     title: 'MVNO-operaattorit Suomessa — kannattaako vaihtaa budjettioperaattoriin?',
     description: 'Mitä ovat MVNO-operaattorit ja miten ne eroavat isoista operaattoreista? Kattava opas Suomen budjettioperaattoreista: Moi, Giga, Oomi ja Globetel.',
     date: '2026-03-05',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Opas',
     readingTime: 7,
     content: `
@@ -80,9 +80,9 @@ export const blogPosts: BlogPost[] = [
 <p>Suomessa toimii useita MVNO-operaattoreita:</p>
 <ul>
   <li><strong>Moi Mobiili</strong> — DNA:n verkko. Perustettu 2016. Tunnettu yksinkertaisista ja edullisista liittymistä.</li>
-  <li><strong>Giga Mobiili</strong> — Telian verkko. Perustettu 2024. Lupaa 20–30 % halvemmat hinnat.</li>
-  <li><strong>Oomi Mobiili</strong> — Elisan verkko. Energiayhtiö Oomin lanseeraama palvelu.</li>
-  <li><strong>Globetel</strong> — DNA:n verkko. Erikoistunut edullisiin ulkomaanpuheluihin.</li>
+  <li><strong>Giga Mobiili</strong> — DNA:n verkko. Perustettu 2025 (Gigantin operaattori). Selkeät liittymät ilman piilokustannuksia.</li>
+  <li><strong>Oomi Mobiili</strong> — Elisan verkko. Perustettu 2025. Energiayhtiö Oomin lanseeraama palvelu.</li>
+  <li><strong>Globetel</strong> — Telian verkko. Perustettu 1997. Erikoistunut edullisiin ulkomaanpuheluihin.</li>
 </ul>
 
 <h2>Miksi MVNO on halvempi?</h2>
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
 <p>Ei. MVNO käyttää täsmälleen samaa verkkoa kuin sen isäntäoperaattori. Moi Mobiilin asiakas saa saman DNA:n verkon kuin DNA:n oma asiakas. Joissain tapauksissa verkon priorisointi voi ruuhkatilanteissa suosia MNO:n omia asiakkaita, mutta käytännössä eroa on vaikea huomata.</p>
 
 <h2>Kannattaako vaihtaa?</h2>
-<p>Jos maksat yli 20 €/kk perusliittymästä, vaihto MVNO:hon voi säästää 5–15 €/kk eli 60–180 € vuodessa. Vaihto on järkevä, jos et tarvitse viihdepalveluita tai myymäläasiakaspalvelua.</p>
+<p>Vaihto MVNO-operaattoriin voi säästää kuluissa erityisesti, jos et tarvitse viihdepalveluita tai myymäläasiakaspalvelua. Huomaa kuitenkin, että vuonna 2026 suurimpien MVNO-operaattoreiden hinnat ovat lähentyneet isojen operaattoreiden kampanjahintoja, joten kannattaa aina vertailla kaikkia vaihtoehtoja.</p>
 `,
   },
   {
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Laajakaistan valintaopas 2026 — kuitu, 4G vai 5G-kotinetti?',
     description: 'Miten valita oikea laajakaista? Vertailemme kuitua, 4G-kotinettiä ja 5G-kotinettiä. Selvitä, mikä sopii sinulle parhaiten.',
     date: '2026-02-28',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Opas',
     readingTime: 6,
     content: `
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Puhelinliittymän irtisanominen — näin vaihdat operaattoria',
     description: 'Käytännön opas puhelinliittymän irtisanomiseen ja operaattorin vaihtoon. Numeron siirto, irtisanomisajat ja vinkit.',
     date: '2026-02-20',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Opas',
     readingTime: 5,
     content: `
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
     title: '5G-kattavuus Suomessa 2026 — missä 5G toimii?',
     description: 'Kattava katsaus 5G-verkon kattavuuteen Suomessa vuonna 2026. Minkä operaattoreiden 5G toimii missäkin kaupungissa?',
     date: '2026-02-10',
-    author: 'Valitse Puhelin',
+    author: 'Valitsepuhelin.fi',
     category: 'Tekniikka',
     readingTime: 7,
     content: `

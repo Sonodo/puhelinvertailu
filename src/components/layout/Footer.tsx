@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { Smartphone } from 'lucide-react';
-import { EMPIRE_SITES } from '@/lib/constants';
+import { VALITSE_SITES, EMPIRE_SITES } from '@/lib/constants';
 
 const footerSections = {
   palvelut: {
@@ -47,7 +47,7 @@ export default function Footer() {
                 <Smartphone className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">
-                Valitse<span className="text-cyan-400"> Puhelin</span>
+                Puhelin<span className="text-cyan-400">vertailu</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-6 text-slate-400">
@@ -76,10 +76,30 @@ export default function Footer() {
           ))}
         </div>
 
-        {/* Empire cross-links */}
+        {/* Valitse network cross-links */}
         <div className="mt-12 border-t border-slate-800 pt-8">
           <p className="mb-4 text-xs font-medium uppercase tracking-wider text-slate-500">
-            Osa Valitse-verkostoa
+            Valitse-verkosto
+          </p>
+          <div className="flex flex-wrap gap-4">
+            {VALITSE_SITES.map((site) => (
+              <a
+                key={site.url}
+                href={site.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm text-slate-400 transition-colors hover:text-cyan-400"
+              >
+                {site.name} — {site.description}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        {/* Other empire links */}
+        <div className="mt-6">
+          <p className="mb-4 text-xs font-medium uppercase tracking-wider text-slate-500">
+            Muut palvelumme
           </p>
           <div className="flex flex-wrap gap-4">
             {EMPIRE_SITES.map((site) => (
@@ -99,7 +119,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 border-t border-slate-800 pt-8">
           <p className="text-center text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} Valitse Puhelin. Kaikki oikeudet pidätetään.
+            &copy; {new Date().getFullYear()} Valitsepuhelin.fi. Kaikki oikeudet pidätetään.
             Palvelu on käyttäjille ilmainen. Saatamme saada korvauksen, jos siirryt palvelumme kautta operaattorin sivuille.
           </p>
         </div>

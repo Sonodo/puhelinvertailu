@@ -74,8 +74,8 @@ export default function Opas5GPage() {
 
           <h2>5G-liittymän hinta</h2>
           <p>
-            5G-liittymät maksavat noin 23–45 €/kk riippuen nopeudesta ja operaattorista.
-            Budjettioperaattoreilta (Moi, Giga, Oomi) saat 5G-liittymän edullisemmin.
+            5G-liittymät maksavat noin 27–50 €/kk riippuen nopeudesta ja operaattorista.
+            Oomi Mobiili tarjoaa 5G-liittymän alkaen 26,99 €/kk ja DNA:lta saat 5G:n alkaen 27,90 €/kk.
           </p>
 
           <p>

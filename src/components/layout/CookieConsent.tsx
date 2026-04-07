@@ -10,11 +10,20 @@ export default function CookieConsent() {
     const consent = localStorage.getItem('cookie-consent');
     if (!consent) {
       setVisible(true);
+    } else if (consent === 'accepted' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      });
     }
   }, []);
 
   const accept = () => {
     localStorage.setItem('cookie-consent', 'accepted');
+    if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+      });
+    }
     setVisible(false);
   };
 

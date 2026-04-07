@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tietosuojaseloste',
-  description: 'Valitse Puhelimen tietosuojaseloste. Kerromme, miten käsittelemme henkilötietojasi.',
+  title: 'Tietosuojaseloste — Valitsepuhelin.fi',
+  description: 'Valitsepuhelin.fi:n tietosuojaseloste. Kerromme, miten käsittelemme henkilötietojasi.',
   alternates: { canonical: '/tietosuoja' },
 };
 
@@ -20,12 +20,12 @@ export default function TietosuojaPage() {
           <p>
             Sonodo — Henri Linnainmaa<br />
             Helsinki, Suomi<br />
-            Sähköposti: info@valitse.fi
+            Sähköposti: info@valitsepuhelin.fi
           </p>
 
           <h2>2. Mitä tietoja keräämme?</h2>
           <p>
-            Valitse Puhelin kerää seuraavia tietoja palvelun käytöstä:
+            Valitsepuhelin.fi kerää seuraavia tietoja palvelun käytöstä:
           </p>
           <ul>
             <li>Evästeisiin perustuva analytiikkadata (vierailut, sivunäkymät)</li>
@@ -65,7 +65,7 @@ export default function TietosuojaPage() {
           <h2>7. Rekisteröidyn oikeudet</h2>
           <p>
             Sinulla on oikeus tarkastaa, oikaista ja poistaa tietosi. Voit myös vastustaa
-            tietojen käsittelyä. Ota yhteyttä: info@valitse.fi.
+            tietojen käsittelyä. Ota yhteyttä: info@valitsepuhelin.fi.
           </p>
 
           <h2>8. Muutokset</h2>

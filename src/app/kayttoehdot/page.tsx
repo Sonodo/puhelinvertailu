@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Käyttöehdot',
-  description: 'Valitse Puhelimen käyttöehdot. Palvelun käyttöä koskevat ehdot ja vastuunrajoitukset.',
+  title: 'Käyttöehdot — Valitsepuhelin.fi',
+  description: 'Valitsepuhelin.fi:n käyttöehdot. Palvelun käyttöä koskevat ehdot ja vastuunrajoitukset.',
   alternates: { canonical: '/kayttoehdot' },
 };
 
@@ -20,12 +20,12 @@ export default function KayttoehdotPage() {
           <p>
             Sonodo — Henri Linnainmaa<br />
             Helsinki, Suomi<br />
-            Sähköposti: info@valitse.fi
+            Sähköposti: info@valitsepuhelin.fi
           </p>
 
           <h2>2. Palvelun kuvaus</h2>
           <p>
-            Valitse Puhelin (valitsepuhelin.fi) on ilmainen verkkopalvelu, joka vertailee puhelinliittymiä
+            Valitsepuhelin.fi on ilmainen verkkopalvelu, joka vertailee puhelinliittymiä
             ja laajakaistaliittymiä Suomessa. Palvelu on tarkoitettu kuluttajille päätöksenteon tueksi.
           </p>
 
@@ -45,7 +45,7 @@ export default function KayttoehdotPage() {
 
           <h2>5. Vastuunrajoitus</h2>
           <p>
-            Valitse Puhelin ei ole osapuolena käyttäjän ja operaattorin välisessä
+            Valitsepuhelin.fi ei ole osapuolena käyttäjän ja operaattorin välisessä
             sopimussuhteessa. Emme vastaa operaattoreiden tuotteiden tai palveluiden
             laadusta, hinnoista tai saatavuudesta. Palvelua käytetään omalla vastuulla.
           </p>

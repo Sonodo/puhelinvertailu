@@ -6,11 +6,13 @@ export function formatPrice(price: number): string {
 // Format data amount
 export function formatData(amount: number | 'unlimited'): string {
   if (amount === 'unlimited') return 'Rajaton';
+  if (amount === 0) return 'Ei dataa';
   return `${amount} Gt`;
 }
 
 // Format speed
 export function formatSpeed(speed: number): string {
+  if (speed === 0) return '—';
   if (speed >= 1000) return `${(speed / 1000).toFixed(0)} Gbit/s`;
   return `${speed} Mbit/s`;
 }

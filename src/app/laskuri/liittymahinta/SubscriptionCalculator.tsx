@@ -6,7 +6,7 @@ import { Calculator, TrendingDown } from 'lucide-react';
 
 export default function SubscriptionCalculator() {
   const [currentPrice, setCurrentPrice] = useState<number>(30);
-  const cheapestMarket = 6.99;
+  const cheapestMarket = 12.90;
 
   const yearlyCurrent = currentPrice * 12;
   const yearlyCheapest = cheapestMarket * 12;
@@ -76,8 +76,8 @@ export default function SubscriptionCalculator() {
         </div>
 
         <p className="mt-4 text-xs text-slate-500">
-          * Halvin markkinoilla oleva liittymä on tällä hetkellä {cheapestMarket.toFixed(2).replace('.', ',')} €/kk
-          (Giga 5 Gt). Todellinen säästö riippuu valitsemastasi liittymästä ja datantarpeistasi.
+          * Halvin datallinen liittymä on tällä hetkellä {cheapestMarket.toFixed(2).replace('.', ',')} €/kk
+          (DNA Super 4G 8 Gt). Todellinen säästö riippuu valitsemastasi liittymästä ja datantarpeistasi.
         </p>
       </div>
 
