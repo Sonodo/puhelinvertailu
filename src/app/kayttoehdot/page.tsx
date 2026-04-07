@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Käyttöehdot — Valitsepuhelin.fi',
-  description: 'Valitsepuhelin.fi:n käyttöehdot. Palvelun käyttöä koskevat ehdot ja vastuunrajoitukset.',
+  title: 'Käyttöehdot — Valitse Puhelin',
+  description: 'Valitse Puhelimen käyttöehdot. Palvelun käyttöä koskevat ehdot ja vastuunrajoitukset.',
   alternates: { canonical: '/kayttoehdot' },
 };
 
@@ -25,7 +25,7 @@ export default function KayttoehdotPage() {
 
           <h2>2. Palvelun kuvaus</h2>
           <p>
-            Valitsepuhelin.fi on ilmainen verkkopalvelu, joka vertailee puhelinliittymiä
+            Valitse Puhelin on ilmainen verkkopalvelu, joka vertailee puhelinliittymiä
             ja laajakaistaliittymiä Suomessa. Palvelu on tarkoitettu kuluttajille päätöksenteon tueksi.
           </p>
 
@@ -45,7 +45,7 @@ export default function KayttoehdotPage() {
 
           <h2>5. Vastuunrajoitus</h2>
           <p>
-            Valitsepuhelin.fi ei ole osapuolena käyttäjän ja operaattorin välisessä
+            Valitse Puhelin ei ole osapuolena käyttäjän ja operaattorin välisessä
             sopimussuhteessa. Emme vastaa operaattoreiden tuotteiden tai palveluiden
             laadusta, hinnoista tai saatavuudesta. Palvelua käytetään omalla vastuulla.
           </p>

@@ -7,10 +7,10 @@ export default function CookieConsent() {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
+    const consent = localStorage.getItem('analytics_consent');
     if (!consent) {
       setVisible(true);
-    } else if (consent === 'accepted' && typeof window.gtag === 'function') {
+    } else if (consent === 'granted' && typeof window.gtag === 'function') {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
       });
@@ -18,7 +18,7 @@ export default function CookieConsent() {
   }, []);
 
   const accept = () => {
-    localStorage.setItem('cookie-consent', 'accepted');
+    localStorage.setItem('analytics_consent', 'granted');
     if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
       window.gtag('consent', 'update', {
         analytics_storage: 'granted',
@@ -28,7 +28,7 @@ export default function CookieConsent() {
   };
 
   const reject = () => {
-    localStorage.setItem('cookie-consent', 'rejected');
+    localStorage.setItem('analytics_consent', 'denied');
     setVisible(false);
   };
 

@@ -49,7 +49,7 @@ export const NAVIGATION: NavigationItem[] = [
   },
   {
     label: 'Oppaat',
-    href: '/opas/puhelinliittyman-vaihto',
+    href: '/opas',
     description: 'Hyödylliset oppaat ja vinkit',
   },
   {

@@ -14,6 +14,8 @@ import {
 import { operators } from '@/data/operators';
 import { mobilePlans, getCheapestPlans } from '@/data/mobile-plans';
 import { getLatestPosts } from '@/data/blog-posts';
+import { cities } from '@/data/cities';
+import { comparisonPairs } from '@/data/comparisons';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
 import { SITE_URL } from '@/lib/constants';
 
@@ -104,7 +106,7 @@ export default function HomePage() {
           </div>
           <div className="flex items-center gap-2 text-sm font-medium text-slate-700">
             <Zap className="h-5 w-5 text-amber-500" />
-            Ajan tasalla oleva data
+            Säännöllisesti tarkistettu data
           </div>
         </div>
       </section>
@@ -136,6 +138,10 @@ export default function HomePage() {
               <ArrowRight className="h-4 w-4" />
             </Link>
           </div>
+
+          <p className="mt-4 text-sm text-gray-500">
+            Liittymien hinnat ja ehdot voivat muuttua. Tarkista aina ajantasainen hinta operaattorin sivuilta.
+          </p>
         </div>
       </section>
 
@@ -240,6 +246,60 @@ export default function HomePage() {
             <Link href="/blogi" className="text-sm font-semibold text-cyan-600 hover:text-cyan-700">
               Kaikki artikkelit &rarr;
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* City pages */}
+      <section className="py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Liittymät kaupungeittain
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Katso liittymätarjonta ja 5G-kattavuus kaupungissasi
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+            {cities.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/kaupunki/${city.slug}`}
+                className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-cyan-200 hover:text-cyan-700 hover:shadow-md"
+              >
+                {city.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Operator comparisons */}
+      <section className="border-t border-slate-200 bg-slate-50 py-16 sm:py-20">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="mb-8 text-center">
+            <h2 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
+              Operaattorivertailut
+            </h2>
+            <p className="mt-4 text-lg text-slate-600">
+              Vertaile operaattoreita keskenään
+            </p>
+          </div>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4">
+            {comparisonPairs.map((pair) => {
+              const names = pair.slugPair.replace(/-vs-/, ' vs ').split(' vs ');
+              const label = names.map((n) => n.charAt(0).toUpperCase() + n.slice(1)).join(' vs ');
+              return (
+                <Link
+                  key={pair.slugPair}
+                  href={`/liittymavertailu/${pair.slugPair}`}
+                  className="rounded-xl border border-slate-200 bg-white px-4 py-3 text-center text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-cyan-200 hover:text-cyan-700 hover:shadow-md"
+                >
+                  {label}
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>

@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tietosuojaseloste — Valitsepuhelin.fi',
-  description: 'Valitsepuhelin.fi:n tietosuojaseloste. Kerromme, miten käsittelemme henkilötietojasi.',
+  title: 'Tietosuojaseloste — Valitse Puhelin',
+  description: 'Valitse Puhelimen tietosuojaseloste. Kerromme, miten käsittelemme henkilötietojasi.',
   alternates: { canonical: '/tietosuoja' },
 };
 
@@ -25,7 +25,7 @@ export default function TietosuojaPage() {
 
           <h2>2. Mitä tietoja keräämme?</h2>
           <p>
-            Valitsepuhelin.fi kerää seuraavia tietoja palvelun käytöstä:
+            Valitse Puhelin kerää seuraavia tietoja palvelun käytöstä:
           </p>
           <ul>
             <li>Evästeisiin perustuva analytiikkadata (vierailut, sivunäkymät)</li>

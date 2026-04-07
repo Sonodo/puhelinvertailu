@@ -26,7 +26,7 @@ export default function HalvinPuhelinliittymaPage() {
             Halvin puhelinliittymä 2026
           </h1>
           <p className="mt-4 text-lg text-slate-600">
-            Etsimme puolestasi Suomen halvimmat puhelinliittymät. Kaikissa vertailun liittymissä on
+            Etsimme puolestasi Suomen halvimmat puhelinliittymät. Useimmissa vertailun liittymissä on
             rajaton puhe ja viestit Suomeen — erona on datamäärä, nopeus ja hinta.
           </p>
         </div>

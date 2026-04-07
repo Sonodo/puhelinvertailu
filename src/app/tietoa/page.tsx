@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tietoa palvelusta — Valitsepuhelin.fi',
+  title: 'Tietoa palvelusta — Valitse Puhelin',
   description:
-    'Valitsepuhelin.fi on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
+    'Valitse Puhelin on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
   alternates: { canonical: '/tietoa' },
 };
 
@@ -12,13 +12,13 @@ export default function TietoaPage() {
     <div className="py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
-          Tietoa Valitsepuhelin.fi-palvelusta
+          Tietoa Valitse Puhelin -palvelusta
         </h1>
 
         <article className="mt-10 prose prose-slate prose-lg max-w-none">
-          <h2>Mikä on Valitsepuhelin.fi?</h2>
+          <h2>Mikä on Valitse Puhelin?</h2>
           <p>
-            Valitsepuhelin.fi on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
+            Valitse Puhelin on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
             kuluttajia löytämään parhaan puhelinliittymän ja laajakaistan. Vertailemme kaikkia
             Suomen suurimpia operaattoreita ja niiden liittymiä yhdessä paikassa.
           </p>
@@ -46,8 +46,8 @@ export default function TietoaPage() {
 
           <h2>Osa Valitse-verkostoa</h2>
           <p>
-            Valitsepuhelin.fi on osa Valitse-verkostoa, johon kuuluvat
-            myös Valitsesahko.fi (sähkövertailu), Valitsevakuutus.fi, Valitselaina.fi ja
+            Valitse Puhelin on osa Valitse-verkostoa, johon kuuluvat
+            myös Valitse Sähkö (sähkövertailu), Valitse Vakuutus, Valitse Laina ja
             muut palvelut. Tavoitteemme on auttaa suomalaisia kuluttajia tekemään parempia
             päätöksiä ja säästämään arjen kuluissa.
           </p>

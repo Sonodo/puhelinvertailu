@@ -47,11 +47,11 @@ export default function Footer() {
                 <Smartphone className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">
-                Puhelin<span className="text-cyan-400">vertailu</span>
+                Valitse<span className="text-cyan-400"> Puhelin</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-6 text-slate-400">
-              Suomen kattavin puhelinliittymien ja laajakaistojen vertailupalvelu.
+              Monipuolinen puhelinliittymien ja laajakaistojen vertailupalvelu.
               Ilmainen ja puolueeton.
             </p>
           </div>
@@ -119,7 +119,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 border-t border-slate-800 pt-8">
           <p className="text-center text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} Valitsepuhelin.fi. Kaikki oikeudet pidätetään.
+            &copy; {new Date().getFullYear()} Valitse Puhelin. Kaikki oikeudet pidätetään.
             Palvelu on käyttäjille ilmainen. Saatamme saada korvauksen, jos siirryt palvelumme kautta operaattorin sivuille.
           </p>
         </div>

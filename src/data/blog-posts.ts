@@ -6,7 +6,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Halvimmat puhelinliittymät 2026 — kattava hintavertailu',
     description: 'Selvitimme, mitkä ovat Suomen halvimmat puhelinliittymät vuonna 2026. Vertailussa mukana Elisa, DNA, Telia sekä budjettioperaattorit Moi, Giga ja Oomi.',
     date: '2026-03-15',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Vertailu',
     readingTime: 8,
     content: `
@@ -39,7 +39,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Elisa vs DNA vs Telia — suuri operaattorivertailu 2026',
     description: 'Vertailemme Suomen kolmea suurinta operaattoria: Elisa, DNA ja Telia. Kumpi on paras verkko, liittymät ja asiakaspalvelu?',
     date: '2026-03-10',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Vertailu',
     readingTime: 10,
     content: `
@@ -70,7 +70,7 @@ export const blogPosts: BlogPost[] = [
     title: 'MVNO-operaattorit Suomessa — kannattaako vaihtaa budjettioperaattoriin?',
     description: 'Mitä ovat MVNO-operaattorit ja miten ne eroavat isoista operaattoreista? Kattava opas Suomen budjettioperaattoreista: Moi, Giga, Oomi ja Globetel.',
     date: '2026-03-05',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Opas',
     readingTime: 7,
     content: `
@@ -106,7 +106,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Laajakaistan valintaopas 2026 — kuitu, 4G vai 5G-kotinetti?',
     description: 'Miten valita oikea laajakaista? Vertailemme kuitua, 4G-kotinettiä ja 5G-kotinettiä. Selvitä, mikä sopii sinulle parhaiten.',
     date: '2026-02-28',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Opas',
     readingTime: 6,
     content: `
@@ -147,7 +147,7 @@ export const blogPosts: BlogPost[] = [
     title: 'Puhelinliittymän irtisanominen — näin vaihdat operaattoria',
     description: 'Käytännön opas puhelinliittymän irtisanomiseen ja operaattorin vaihtoon. Numeron siirto, irtisanomisajat ja vinkit.',
     date: '2026-02-20',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Opas',
     readingTime: 5,
     content: `
@@ -182,7 +182,7 @@ export const blogPosts: BlogPost[] = [
     title: '5G-kattavuus Suomessa 2026 — missä 5G toimii?',
     description: 'Kattava katsaus 5G-verkon kattavuuteen Suomessa vuonna 2026. Minkä operaattoreiden 5G toimii missäkin kaupungissa?',
     date: '2026-02-10',
-    author: 'Valitsepuhelin.fi',
+    author: 'Valitse Puhelin',
     category: 'Tekniikka',
     readingTime: 7,
     content: `

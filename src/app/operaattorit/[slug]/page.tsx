@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { Check, X, ExternalLink, ArrowLeft } from 'lucide-react';
-import { operators, getOperatorBySlug } from '@/data/operators';
+import { operators, getOperatorBySlug, getOperatorById } from '@/data/operators';
 import { mobilePlans, getPlansByOperator } from '@/data/mobile-plans';
 import { broadbandPlans, getBroadbandByOperator } from '@/data/broadband-plans';
+import { comparisonPairs } from '@/data/comparisons';
 import { MobilePlanCard, BroadbandPlanCard } from '@/components/ui/PlanCard';
 
 interface Props {
@@ -131,7 +132,7 @@ export default async function OperatorPage({ params }: Props) {
 
         {/* Broadband plans */}
         {opBroadbandPlans.length > 0 && (
-          <div>
+          <div className="mb-12">
             <h2 className="mb-6 text-2xl font-bold text-slate-900">
               {operator.name} — Laajakaistat
             </h2>
@@ -142,6 +143,37 @@ export default async function OperatorPage({ params }: Props) {
             </div>
           </div>
         )}
+
+        {/* Comparison cross-links */}
+        {(() => {
+          const relevantPairs = comparisonPairs.filter(
+            (p) => p.operator1Id === operator.id || p.operator2Id === operator.id
+          );
+          if (relevantPairs.length === 0) return null;
+          return (
+            <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6">
+              <h2 className="mb-4 text-xl font-bold text-slate-900">
+                Vertaa {operator.name} muihin operaattoreihin
+              </h2>
+              <div className="flex flex-wrap gap-3">
+                {relevantPairs.map((pair) => {
+                  const otherId = pair.operator1Id === operator.id ? pair.operator2Id : pair.operator1Id;
+                  const other = getOperatorById(otherId);
+                  if (!other) return null;
+                  return (
+                    <Link
+                      key={pair.slugPair}
+                      href={`/liittymavertailu/${pair.slugPair}`}
+                      className="rounded-lg border border-slate-200 bg-white px-4 py-2 text-sm font-medium text-slate-700 shadow-sm transition-all hover:border-cyan-200 hover:text-cyan-700 hover:shadow-md"
+                    >
+                      {operator.name} vs {other.name}
+                    </Link>
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })()}
       </div>
     </div>
   );
