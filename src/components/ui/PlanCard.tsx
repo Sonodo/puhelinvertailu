@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import { memo } from 'react';
-import { Signal, Wifi, Check, ExternalLink } from 'lucide-react';
+import { Signal, Wifi, Check, X, ExternalLink } from 'lucide-react';
 import { MobilePlan, BroadbandPlan } from '@/types';
 import { getOperatorById } from '@/data/operators';
 import { formatData, formatSpeed } from '@/lib/utils';
@@ -45,17 +45,19 @@ export const MobilePlanCard = memo(function MobilePlanCard({ plan, showOperator 
         </div>
       </div>
 
-      <div className="mb-4 grid grid-cols-2 gap-3">
+      <div className={`mb-4 grid gap-3 ${plan.maxSpeed === 0 ? 'grid-cols-1' : 'grid-cols-2'}`}>
         <div className="rounded-lg bg-slate-50 p-3 text-center">
           <Signal className="mx-auto mb-1 h-4 w-4 text-cyan-600" />
           <p className="text-sm font-semibold text-slate-900">{formatData(plan.dataAmount)}</p>
           <p className="text-xs text-slate-500">Data</p>
         </div>
-        <div className="rounded-lg bg-slate-50 p-3 text-center">
-          <Wifi className="mx-auto mb-1 h-4 w-4 text-cyan-600" />
-          <p className="text-sm font-semibold text-slate-900">{formatSpeed(plan.maxSpeed)}</p>
-          <p className="text-xs text-slate-500">Maksiminopeus</p>
-        </div>
+        {plan.maxSpeed > 0 && (
+          <div className="rounded-lg bg-slate-50 p-3 text-center">
+            <Wifi className="mx-auto mb-1 h-4 w-4 text-cyan-600" />
+            <p className="text-sm font-semibold text-slate-900">{formatSpeed(plan.maxSpeed)}</p>
+            <p className="text-xs text-slate-500">Maksiminopeus</p>
+          </div>
+        )}
       </div>
 
       <ul className="mb-5 flex-1 space-y-2">
@@ -65,10 +67,17 @@ export const MobilePlanCard = memo(function MobilePlanCard({ plan, showOperator 
             {feature}
           </li>
         ))}
-        <li className="flex items-center gap-2 text-sm text-slate-600">
-          <Check className="h-4 w-4 shrink-0 text-emerald-500" />
-          EU-roaming {plan.euRoamingData} Gt
-        </li>
+        {plan.euRoamingData > 0 ? (
+          <li className="flex items-center gap-2 text-sm text-slate-600">
+            <Check className="h-4 w-4 shrink-0 text-emerald-500" />
+            EU-roaming {plan.euRoamingData} Gt
+          </li>
+        ) : (
+          <li className="flex items-center gap-2 text-sm text-slate-400">
+            <X className="h-4 w-4 shrink-0 text-slate-400" />
+            Ei EU-roaming-dataa
+          </li>
+        )}
       </ul>
 
       <a

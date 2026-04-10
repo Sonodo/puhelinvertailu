@@ -56,10 +56,11 @@ export default function BroadbandPlanFilters({ plans }: Props) {
 
         <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <div>
-            <label className="mb-1 block text-sm font-medium text-slate-700">
+            <label htmlFor="bb-filter-max-price" className="mb-1 block text-sm font-medium text-slate-700">
               Maksimihinta: {maxPrice} €/kk
             </label>
             <input
+              id="bb-filter-max-price"
               type="range"
               min={15}
               max={50}
@@ -70,8 +71,9 @@ export default function BroadbandPlanFilters({ plans }: Props) {
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-slate-700">Operaattori</label>
+            <label htmlFor="bb-filter-operator" className="mb-1 block text-sm font-medium text-slate-700">Operaattori</label>
             <select
+              id="bb-filter-operator"
               value={selectedOperator}
               onChange={(e) => setSelectedOperator(e.target.value)}
               className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
@@ -86,8 +88,9 @@ export default function BroadbandPlanFilters({ plans }: Props) {
           </div>
 
           <div>
-            <label className="mb-1 block text-sm font-medium text-slate-700">Tekniikka</label>
+            <label htmlFor="bb-filter-technology" className="mb-1 block text-sm font-medium text-slate-700">Tekniikka</label>
             <select
+              id="bb-filter-technology"
               value={technology}
               onChange={(e) => setTechnology(e.target.value as BroadbandTechnology | 'all')}
               className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"
@@ -100,11 +103,12 @@ export default function BroadbandPlanFilters({ plans }: Props) {
           </div>
 
           <div>
-            <label className="mb-1 flex items-center gap-1 text-sm font-medium text-slate-700">
+            <label htmlFor="bb-filter-sort" className="mb-1 flex items-center gap-1 text-sm font-medium text-slate-700">
               <ArrowUpDown className="h-3.5 w-3.5" />
               Järjestä
             </label>
             <select
+              id="bb-filter-sort"
               value={sort}
               onChange={(e) => setSort(e.target.value as SortOption)}
               className="w-full rounded-lg border border-slate-300 px-3 py-2 text-sm"

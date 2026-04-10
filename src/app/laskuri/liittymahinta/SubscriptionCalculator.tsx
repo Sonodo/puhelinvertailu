@@ -1,12 +1,22 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
 import Link from 'next/link';
 import { Calculator, TrendingDown } from 'lucide-react';
+import { mobilePlans } from '@/data/mobile-plans';
 
 export default function SubscriptionCalculator() {
   const [currentPrice, setCurrentPrice] = useState<number>(30);
-  const cheapestMarket = 12.90;
+
+  const { cheapestMarket, cheapestPlanName } = useMemo(() => {
+    const plansWithData = mobilePlans.filter(
+      (p) => p.dataAmount === 'unlimited' || (typeof p.dataAmount === 'number' && p.dataAmount > 0)
+    );
+    const cheapest = plansWithData.reduce((min, p) =>
+      p.monthlyPrice < min.monthlyPrice ? p : min
+    , plansWithData[0]);
+    return { cheapestMarket: cheapest.monthlyPrice, cheapestPlanName: cheapest.name };
+  }, []);
 
   const yearlyCurrent = currentPrice * 12;
   const yearlyCheapest = cheapestMarket * 12;
@@ -32,6 +42,7 @@ export default function SubscriptionCalculator() {
             step={0.5}
             value={currentPrice}
             onChange={(e) => setCurrentPrice(Number(e.target.value))}
+            aria-label="Nykyinen kuukausihinta"
             className="w-full accent-cyan-600"
           />
           <div className="mt-1 flex justify-between text-xs text-slate-400">
@@ -77,7 +88,7 @@ export default function SubscriptionCalculator() {
 
         <p className="mt-4 text-xs text-slate-500">
           * Halvin datallinen liittymä on tällä hetkellä {cheapestMarket.toFixed(2).replace('.', ',')} €/kk
-          (DNA Super 4G 8 Gt). Todellinen säästö riippuu valitsemastasi liittymästä ja datantarpeistasi.
+          ({cheapestPlanName}). Todellinen säästö riippuu valitsemastasi liittymästä ja datantarpeistasi.
         </p>
       </div>
 

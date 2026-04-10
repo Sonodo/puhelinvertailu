@@ -5,7 +5,7 @@
 **Health**: GREEN
 **Domain**: valitsepuhelin.fi (custom domain)
 **GA4**: G-Q3MR58J1E7 (active)
-**Last Updated**: Session #079 — 2026-04-07
+**Last Updated**: Session #080 — 2026-04-07
 
 ## Current State — LIVE
 
@@ -17,6 +17,13 @@
 - Next.js 16 + TypeScript + Tailwind
 
 ## Recent Changes
+
+### Session #080 — Compliance Audit (2026-04-07)
+- **Cookie consent added**: GDPR-compliant cookie banner implemented
+- **False claims fixed**: Removed misleading or inaccurate marketing claims
+- **Guides page added**: New /oppaat guides section
+- **City links fixed**: Corrected broken internal links to city pages
+- **Deployed**: Changes pushed to production at valitsepuhelin.fi
 
 ### Session #079 — Live Deployment + MVNO Data Rewrite (2026-04-07)
 - **LIVE at valitsepuhelin.fi**: Custom domain configured and working

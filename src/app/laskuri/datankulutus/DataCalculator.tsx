@@ -147,6 +147,7 @@ function SliderInput({
         max={max}
         value={value}
         onChange={(e) => onChange(Number(e.target.value))}
+        aria-label={label}
         className="w-full accent-cyan-600"
       />
     </div>
