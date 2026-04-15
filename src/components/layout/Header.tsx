@@ -12,12 +12,12 @@ export default function Header() {
     <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur-sm">
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2" aria-label="Valitse Puhelin — Etusivu">
+        <Link href="/" className="flex items-center gap-2" aria-label="Valitse Liittymä — Etusivu">
           <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-cyan-600">
             <Smartphone className="h-5 w-5 text-white" />
           </div>
           <span className="text-lg font-bold text-slate-900">
-            Valitse<span className="text-cyan-600"> Puhelin</span>
+            Valitse<span className="text-cyan-600"> Liittymä</span>
           </span>
         </Link>
 

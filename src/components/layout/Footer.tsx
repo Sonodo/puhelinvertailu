@@ -43,12 +43,12 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
           {/* Brand column */}
           <div className="sm:col-span-2 lg:col-span-1">
-            <Link href="/" className="inline-flex items-center gap-2" aria-label="Valitse Puhelin — Etusivu">
+            <Link href="/" className="inline-flex items-center gap-2" aria-label="Valitse Liittymä — Etusivu">
               <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-cyan-600">
                 <Smartphone className="h-5 w-5 text-white" />
               </div>
               <span className="text-lg font-bold text-white">
-                Valitse<span className="text-cyan-400"> Puhelin</span>
+                Valitse<span className="text-cyan-400"> Liittymä</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-6 text-slate-400">
@@ -120,7 +120,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="mt-8 border-t border-slate-800 pt-8">
           <p className="text-center text-xs text-slate-500">
-            &copy; {new Date().getFullYear()} Valitse Puhelin. Kaikki oikeudet pidätetään.
+            &copy; {new Date().getFullYear()} Valitse Liittymä. Kaikki oikeudet pidätetään.
             Palvelu on käyttäjille ilmainen. Saatamme saada korvauksen, jos siirryt palvelumme kautta operaattorin sivuille.
           </p>
         </div>

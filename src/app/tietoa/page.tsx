@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Tietoa palvelusta — Valitse Puhelin',
+  title: 'Tietoa palvelusta — Valitse Liittymä',
   description:
-    'Valitse Puhelin on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
+    'Valitse Liittymä on ilmainen ja puolueeton puhelinliittymien ja laajakaistojen vertailupalvelu Suomessa.',
   alternates: { canonical: '/tietoa' },
 };
 
@@ -12,13 +12,13 @@ export default function TietoaPage() {
     <div className="py-12 sm:py-16">
       <div className="mx-auto max-w-3xl px-4 sm:px-6 lg:px-8">
         <h1 className="text-3xl font-extrabold text-slate-900 sm:text-4xl">
-          Tietoa Valitse Puhelin -palvelusta
+          Tietoa Valitse Liittymä -palvelusta
         </h1>
 
         <article className="mt-10 prose prose-slate prose-lg max-w-none">
-          <h2>Mikä on Valitse Puhelin?</h2>
+          <h2>Mikä on Valitse Liittymä?</h2>
           <p>
-            Valitse Puhelin on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
+            Valitse Liittymä on ilmainen ja puolueeton verkkopalvelu, joka auttaa suomalaisia
             kuluttajia löytämään parhaan puhelinliittymän ja laajakaistan. Vertailemme kaikkia
             Suomen suurimpia operaattoreita ja niiden liittymiä yhdessä paikassa.
           </p>
@@ -46,7 +46,7 @@ export default function TietoaPage() {
 
           <h2>Osa Valitse-verkostoa</h2>
           <p>
-            Valitse Puhelin on osa Valitse-verkostoa, johon kuuluvat
+            Valitse Liittymä on osa Valitse-verkostoa, johon kuuluvat
             myös Valitse Sähkö (sähkövertailu), Valitse Vakuutus, Valitse Laina ja
             muut palvelut. Tavoitteemme on auttaa suomalaisia kuluttajia tekemään parempia
             päätöksiä ja säästämään arjen kuluissa.
@@ -56,7 +56,7 @@ export default function TietoaPage() {
           <p>
             Sonodo — Henri Linnainmaa<br />
             Helsinki, Suomi<br />
-            Sähköposti: info@valitsepuhelin.fi
+            Sähköposti: info@valitseliittyma.fi
           </p>
         </article>
       </div>
