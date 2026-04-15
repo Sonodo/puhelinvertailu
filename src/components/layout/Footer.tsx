@@ -29,6 +29,7 @@ const footerSections = {
     title: 'Tietoa',
     links: [
       { label: 'Tietoa palvelusta', href: '/tietoa' },
+      { label: 'Sivuston ansainta', href: '/sivuston-ansainta' },
       { label: 'Tietosuoja', href: '/tietosuoja' },
       { label: 'Käyttöehdot', href: '/kayttoehdot' },
     ],

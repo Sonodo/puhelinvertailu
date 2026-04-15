@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { mobilePlans, get5GPlans } from '@/data/mobile-plans';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Paras 5G-liittymä 2026 — Vertaa 5G-puhelinliittymiä',
@@ -27,6 +28,8 @@ export default function Paras5GPage() {
             5G-puhelinliittymiä ja löydä paras vaihtoehto juuri sinulle.
           </p>
         </div>
+
+        <AffiliateDisclosure />
 
         {/* Cheapest 5G */}
         <section className="mb-16">

@@ -7,6 +7,7 @@ import { getOperatorById } from '@/data/operators';
 import { mobilePlans, get5GPlans } from '@/data/mobile-plans';
 import { broadbandPlans } from '@/data/broadband-plans';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 interface Props {
   params: Promise<{ city: string }>;
@@ -98,6 +99,8 @@ export default async function CityPage({ params }: Props) {
             </p>
           </div>
         </div>
+
+        <AffiliateDisclosure />
 
         {/* Best 5G plans for the city */}
         {city.has5G && (

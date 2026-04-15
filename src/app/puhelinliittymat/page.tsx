@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { mobilePlans } from '@/data/mobile-plans';
 import MobilePlanFilters from '@/components/plans/MobilePlanFilters';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Puhelinliittymät — Vertaa kaikkia liittymiä Suomessa',
@@ -26,6 +27,8 @@ export default function PuhelinliittymatPage() {
             Suodata hinnan, datamäärän, operaattorin ja verkkotyypin mukaan.
           </p>
         </div>
+
+        <AffiliateDisclosure />
 
         <MobilePlanFilters plans={mobilePlans} />
       </div>

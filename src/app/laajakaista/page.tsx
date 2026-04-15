@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { broadbandPlans } from '@/data/broadband-plans';
 import BroadbandPlanFilters from '@/components/plans/BroadbandPlanFilters';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Laajakaista — Vertaa laajakaistaliittymiä Suomessa',
@@ -26,6 +27,8 @@ export default function LaajakaistaPage() {
             kaikilta operaattoreilta.
           </p>
         </div>
+
+        <AffiliateDisclosure />
 
         <BroadbandPlanFilters plans={broadbandPlans} />
       </div>

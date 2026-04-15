@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { broadbandPlans, getCheapestBroadband, getFiberPlans, get5GBroadband } from '@/data/broadband-plans';
 import { BroadbandPlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Paras laajakaista 2026 — Vertaa laajakaistaliittymiä',
@@ -26,6 +27,8 @@ export default function ParasLaajakaistaPage() {
             Vertaa laajakaistoja ja löydä paras vaihtoehto kotiisi: valokuitu, 4G- tai 5G-kotinetti.
           </p>
         </div>
+
+        <AffiliateDisclosure />
 
         <section className="mb-16">
           <h2 className="mb-6 text-2xl font-bold text-slate-900">Halvimmat laajakaistat</h2>

@@ -6,6 +6,7 @@ import { comparisonPairs, getComparisonBySlug } from '@/data/comparisons';
 import { getOperatorById } from '@/data/operators';
 import { getPlansByOperator } from '@/data/mobile-plans';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 interface Props {
   params: Promise<{ slugPair: string }>;
@@ -123,6 +124,8 @@ export default async function ComparisonPage({ params }: Props) {
             </tbody>
           </table>
         </div>
+
+        <AffiliateDisclosure />
 
         {/* Operator 1 plans */}
         <h2 className="mb-6 text-2xl font-bold text-slate-900">{op1.name} — liittymät</h2>

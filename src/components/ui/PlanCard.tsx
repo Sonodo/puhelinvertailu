@@ -16,6 +16,9 @@ interface MobilePlanCardProps {
 
 export const MobilePlanCard = memo(function MobilePlanCard({ plan, showOperator = true }: MobilePlanCardProps) {
   const operator = getOperatorById(plan.operatorId);
+  const linkRel = operator?.isAffiliate
+    ? 'noopener noreferrer nofollow sponsored'
+    : 'noopener noreferrer nofollow';
 
   return (
     <div className="group relative flex flex-col rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition-shadow hover:shadow-md">
@@ -83,7 +86,7 @@ export const MobilePlanCard = memo(function MobilePlanCard({ plan, showOperator 
       <a
         href={plan.url}
         target="_blank"
-        rel="noopener noreferrer"
+        rel={linkRel}
         className="flex items-center justify-center gap-2 rounded-xl bg-cyan-600 py-3 text-sm font-semibold text-white transition-colors hover:bg-cyan-700"
       >
         Katso tarjous
@@ -100,6 +103,9 @@ interface BroadbandPlanCardProps {
 
 export const BroadbandPlanCard = memo(function BroadbandPlanCard({ plan, showOperator = true }: BroadbandPlanCardProps) {
   const operator = getOperatorById(plan.operatorId);
+  const linkRel = operator?.isAffiliate
+    ? 'noopener noreferrer nofollow sponsored'
+    : 'noopener noreferrer nofollow';
   const techLabel =
     plan.technology === 'fiber' ? 'Valokuitu' : plan.technology === '5G' ? '5G-kotinetti' : '4G-kotinetti';
 
@@ -152,7 +158,7 @@ export const BroadbandPlanCard = memo(function BroadbandPlanCard({ plan, showOpe
       <a
         href={plan.url}
         target="_blank"
-        rel="noopener noreferrer"
+        rel={linkRel}
         className="flex items-center justify-center gap-2 rounded-xl bg-cyan-600 py-3 text-sm font-semibold text-white transition-colors hover:bg-cyan-700"
       >
         Katso tarjous

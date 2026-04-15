@@ -7,6 +7,7 @@ import { mobilePlans, getPlansByOperator } from '@/data/mobile-plans';
 import { broadbandPlans, getBroadbandByOperator } from '@/data/broadband-plans';
 import { comparisonPairs } from '@/data/comparisons';
 import { MobilePlanCard, BroadbandPlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -83,7 +84,11 @@ export default async function OperatorPage({ params }: Props) {
               <a
                 href={operator.website}
                 target="_blank"
-                rel="noopener noreferrer"
+                rel={
+                  operator.isAffiliate
+                    ? 'noopener noreferrer nofollow sponsored'
+                    : 'noopener noreferrer nofollow'
+                }
                 className="flex items-center gap-1 text-cyan-600 hover:text-cyan-700"
               >
                 Verkkosivut <ExternalLink className="h-3.5 w-3.5" />
@@ -115,6 +120,9 @@ export default async function OperatorPage({ params }: Props) {
             </ul>
           </div>
         </div>
+
+        {/* Disclosure shown above any plan CTAs */}
+        {(opMobilePlans.length > 0 || opBroadbandPlans.length > 0) && <AffiliateDisclosure />}
 
         {/* Mobile plans */}
         {opMobilePlans.length > 0 && (

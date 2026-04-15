@@ -17,6 +17,7 @@ import { getLatestPosts } from '@/data/blog-posts';
 import { cities } from '@/data/cities';
 import { comparisonPairs } from '@/data/comparisons';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 import { SITE_URL } from '@/lib/constants';
 
 export const metadata: Metadata = {
@@ -122,6 +123,8 @@ export default function HomePage() {
               Suomen edullisimmat liittymät rajattomalla puheella ja viesteillä
             </p>
           </div>
+
+          <AffiliateDisclosure />
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             {cheapPlans.map((plan) => (

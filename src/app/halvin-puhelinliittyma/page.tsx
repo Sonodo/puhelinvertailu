@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { mobilePlans, getCheapestPlans } from '@/data/mobile-plans';
 import { MobilePlanCard } from '@/components/ui/PlanCard';
+import AffiliateDisclosure from '@/components/ui/AffiliateDisclosure';
 
 export const metadata: Metadata = {
   title: 'Halvin puhelinliittymä 2026 — Edullisimmat liittymät vertailussa',
@@ -30,6 +31,8 @@ export default function HalvinPuhelinliittymaPage() {
             rajaton puhe ja viestit Suomeen — erona on datamäärä, nopeus ja hinta.
           </p>
         </div>
+
+        <AffiliateDisclosure />
 
         {/* Top 3 cheapest */}
         <section className="mb-16">
