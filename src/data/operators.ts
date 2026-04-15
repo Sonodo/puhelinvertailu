@@ -57,10 +57,11 @@ export const operators: Operator[] = [
     description:
       'Telia Finland on osa pohjoismaista Telia Company -konsernia. Noin 30 % markkinaosuudella se on Suomen toiseksi suurin operaattori. Tunnetaan laadukkaasta verkosta, yrityspuolen palveluista ja Telia TV:stä.',
     founded: 2002,
-    website: 'https://www.telia.fi',
+    website: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
     type: 'MNO',
     marketShare: 30,
     color: '#990AE3',
+    isAffiliate: true,
     pros: [
       'Laadukas verkko',
       'Hyvät yrityspuolen palvelut',
@@ -81,10 +82,11 @@ export const operators: Operator[] = [
     description:
       'Moi Mobiili on suomalainen budjettioperaattori, joka toimii DNA:n verkossa. Tunnettu yksinkertaisista ja edullisista liittymistä ilman turhia lisäpalveluita. Kaikki hallitaan sovelluksella.',
     founded: 2016,
-    website: 'https://www.moi.fi',
+    website: 'https://in.moi.fi/t/t?a=1119688036&as=2066470020&t=2&tk=1',
     type: 'MVNO',
     network: 'DNA',
     color: '#FF6B00',
+    isAffiliate: true,
     pros: [
       'Kilpailukykyinen hinnoittelu',
       'Yksinkertainen — ei piilokustannuksia',
@@ -167,6 +169,31 @@ export const operators: Operator[] = [
       'Rajallinen asiakaspalvelu',
       'Ei 5G-liittymiä',
       'Data lisäpalveluna — ei nykyaikaisia paketteja',
+    ],
+  },
+  // === BROADBAND SPECIALISTS ===
+  {
+    id: 'valoo',
+    name: 'Valoo',
+    slug: 'valoo',
+    description:
+      'Valoo on suomalainen valokuituoperaattori, joka tarjoaa nopeita ja rajattomia kuituliittymiä kilpailukykyiseen hintaan. Valoo rakentaa ja omistaa omaa valokuituverkkoa eri puolilla Suomea ja on tunnettu läpinäkyvästä hinnoittelustaan ilman piilokuluja.',
+    founded: 2014,
+    website: 'https://go.adt246.net/t/t?a=1801146847&as=2066470020&t=2&tk=1',
+    type: 'MNO',
+    color: '#FFC627',
+    isAffiliate: true,
+    pros: [
+      'Oma valokuituverkko',
+      'Nopeudet jopa 1000 Mbit/s',
+      'Läpinäkyvä hinnoittelu ilman piilokuluja',
+      'Rajaton data',
+      'Ei sitoutumista',
+    ],
+    cons: [
+      'Saatavuus rajoittuu Valoon verkkoalueisiin',
+      'Ei mobiiliverkkoa',
+      'Pienempi brändi kuin MNO:t',
     ],
   },
 ];

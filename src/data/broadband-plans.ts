@@ -179,7 +179,7 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 50,
     contractType: 'no-commitment',
     specialFeatures: ['Valokuitu', 'Rajaton data', 'Reititin sisältyy'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-netti-200m',
@@ -192,7 +192,7 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 100,
     contractType: 'no-commitment',
     specialFeatures: ['Valokuitu', 'Rajaton data', 'Reititin sisältyy'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-netti-400m',
@@ -205,7 +205,7 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 200,
     contractType: 'no-commitment',
     specialFeatures: ['Valokuitu', 'Rajaton data', 'Reititin sisältyy', 'Telia TV etu'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-netti-1000m',
@@ -218,7 +218,7 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 500,
     contractType: 'no-commitment',
     specialFeatures: ['Valokuitu', 'Rajaton data', 'Premium-reititin', 'Gigabitin nopeus', 'Telia TV etu'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   // Telia — Mobile broadband
   {
@@ -232,7 +232,7 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 50,
     contractType: 'no-commitment',
     specialFeatures: ['4G-verkko', 'Rajaton data', 'Helppo asennus'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-kotinetti-5g',
@@ -245,7 +245,62 @@ export const broadbandPlans: BroadbandPlan[] = [
     uploadSpeed: 100,
     contractType: 'no-commitment',
     specialFeatures: ['5G-verkko', 'Rajaton data', 'Helppo asennus', 'Nopea kuin kuitu'],
-    url: 'https://www.telia.fi/laajakaista',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
+  },
+  // ═══════════════════════════════════════
+  // VALOO — Fiber
+  // ═══════════════════════════════════════
+  {
+    id: 'valoo-kuitu-100m',
+    operatorId: 'valoo',
+    name: 'Valoo Kuitu 100M',
+    category: 'broadband',
+    monthlyPrice: 19.90,
+    technology: 'fiber',
+    downloadSpeed: 100,
+    uploadSpeed: 100,
+    contractType: 'no-commitment',
+    specialFeatures: ['Oma valokuituverkko', 'Rajaton data', 'Symmetrinen nopeus', 'Ei sitoutumista'],
+    url: 'https://go.adt246.net/t/t?a=1801146847&as=2066470020&t=2&tk=1',
+  },
+  {
+    id: 'valoo-kuitu-300m',
+    operatorId: 'valoo',
+    name: 'Valoo Kuitu 300M',
+    category: 'broadband',
+    monthlyPrice: 24.90,
+    technology: 'fiber',
+    downloadSpeed: 300,
+    uploadSpeed: 300,
+    contractType: 'no-commitment',
+    specialFeatures: ['Oma valokuituverkko', 'Rajaton data', 'Symmetrinen nopeus', 'Ei sitoutumista'],
+    url: 'https://go.adt246.net/t/t?a=1801146847&as=2066470020&t=2&tk=1',
+  },
+  {
+    id: 'valoo-kuitu-600m',
+    operatorId: 'valoo',
+    name: 'Valoo Kuitu 600M',
+    category: 'broadband',
+    monthlyPrice: 29.90,
+    technology: 'fiber',
+    downloadSpeed: 600,
+    uploadSpeed: 600,
+    contractType: 'no-commitment',
+    specialFeatures: ['Oma valokuituverkko', 'Rajaton data', 'Symmetrinen nopeus', 'Ei sitoutumista'],
+    url: 'https://go.adt246.net/t/t?a=1801146847&as=2066470020&t=2&tk=1',
+  },
+  {
+    id: 'valoo-kuitu-1000m',
+    operatorId: 'valoo',
+    name: 'Valoo Kuitu 1000M',
+    category: 'broadband',
+    monthlyPrice: 39.90,
+    technology: 'fiber',
+    downloadSpeed: 1000,
+    uploadSpeed: 1000,
+    contractType: 'no-commitment',
+    specialFeatures: ['Oma valokuituverkko', 'Rajaton data', 'Symmetrinen gigabit', 'Ei sitoutumista'],
+    url: 'https://go.adt246.net/t/t?a=1801146847&as=2066470020&t=2&tk=1',
   },
 ];
 

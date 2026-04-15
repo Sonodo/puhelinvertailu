@@ -16,6 +16,7 @@ export interface Operator {
   color: string; // brand color for UI
   pros: string[];
   cons: string[];
+  isAffiliate?: boolean; // true if operator has active affiliate tracking
 }
 
 // Plan types

@@ -184,7 +184,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 6,
     specialFeatures: ['Rajaton puhe ja viestit', '4G-verkko'],
-    url: 'https://www.telia.fi/puhelinliittymat',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-rajaton-4g-50gb',
@@ -200,7 +200,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 13,
     specialFeatures: ['Rajaton puhe ja viestit', '4G-verkko', '50 Gt dataa'],
-    url: 'https://www.telia.fi/puhelinliittymat',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-rajaton-5g-300',
@@ -216,7 +216,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 25,
     specialFeatures: ['Rajaton data', '5G-verkko', '300 Mbit/s', 'Telia TV sisältyy'],
-    url: 'https://www.telia.fi/puhelinliittymat',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-rajaton-5g-450',
@@ -232,7 +232,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 35,
     specialFeatures: ['Rajaton data', '5G-verkko', '450 Mbit/s', 'Telia TV sisältyy'],
-    url: 'https://www.telia.fi/puhelinliittymat',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   {
     id: 'telia-rajaton-5g-1000',
@@ -248,7 +248,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 45,
     specialFeatures: ['Rajaton data', '5G-verkko', '1000 Mbit/s', 'Telia TV Premium', 'Pohjoismaiset puhelut'],
-    url: 'https://www.telia.fi/puhelinliittymat',
+    url: 'https://go.adt291.com/t/t?a=1553065612&as=2066470020&t=2&tk=1',
   },
   // ═══════════════════════════════════════
   // MOI MOBIILI
@@ -267,7 +267,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Viestit 0,055 €/kpl (max 4 €/kk)',
     euRoamingData: 5,
     specialFeatures: ['8 Gt dataa', 'Puheluille ja viesteille kattohinta 4 €/kk', 'Ei sitoutumista', 'Hallinta sovelluksella'],
-    url: 'https://www.moi.fi',
+    url: 'https://in.moi.fi/t/t?a=1119688036&as=2066470020&t=2&tk=1',
   },
   {
     id: 'moi-suosikki-4g',
@@ -283,7 +283,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 15,
     specialFeatures: ['Rajaton data', 'Rajaton puhe ja viestit', 'Ei sitoutumista', 'Hallinta sovelluksella'],
-    url: 'https://www.moi.fi',
+    url: 'https://in.moi.fi/t/t?a=1119688036&as=2066470020&t=2&tk=1',
   },
   {
     id: 'moi-reilu-5g-450',
@@ -299,7 +299,7 @@ export const mobilePlans: MobilePlan[] = [
     smsIncluded: 'Rajaton',
     euRoamingData: 20,
     specialFeatures: ['Rajaton data', '5G-verkko', 'Ei sitoutumista', 'Hallinta sovelluksella'],
-    url: 'https://www.moi.fi',
+    url: 'https://in.moi.fi/t/t?a=1119688036&as=2066470020&t=2&tk=1',
   },
   // ═══════════════════════════════════════
   // GIGA MOBIILI (Gigantin operaattori)
